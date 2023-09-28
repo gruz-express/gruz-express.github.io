@@ -748,7 +748,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 
 .contacts {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -789,7 +789,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 .cells-50 {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -806,7 +806,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
 .contacts {
     width: 100%;
 }
