@@ -770,6 +770,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     width: 1.4em;
     vertical-align: bottom;
     margin-right: 0.8em;
+    opacity: 0.8;
 }
 
 .contacts .contacts-phone img {
@@ -838,4 +839,107 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 #section-status {
     text-align: center;
     font-size: 28px;
+}
+
+
+
+
+#section-reviews {
+    border: 10px solid #95a5a6;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+
+.reviews {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 48px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.review {
+    width: 320px;
+    flex-shrink: 0;
+    position: relative;
+    padding: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 12px;
+}
+
+.review-icon {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.review-icon > img {
+    width: 48px;
+    height: auto;
+    display: block;
+    opacity: 0.8;
+}
+
+.review-name {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 64px; */
+    /* line-height: 48px; */
+    color: #e74c3c;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.review-content {
+    margin-top: 16px;
+}
+
+
+.reviews::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.reviews::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+.reviews::-webkit-scrollbar,
+.reviews::-webkit-scrollbar-track,
+.reviews::-webkit-scrollbar-button,
+.reviews::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.reviews::-webkit-scrollbar-thumb {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2), inset -2px -2px 5px rgba(0,0,0,.1);
+}
+
+.reviews::-webkit-scrollbar-thumb:hover {
+  background: #eee;
+}
+
+
+@media (max-width: 360px) {
+.review {
+    width: 300px;
+}
+}
+
+@media (max-width: 340px) {
+.review {
+    width: 280px;
+}
 }
