@@ -862,12 +862,13 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .review {
-    width: 320px;
     flex-shrink: 0;
     position: relative;
     padding: 16px;
     border: 2px solid #bdc3c7;
     border-radius: 12px;
+    width: 300px;
+    width: calc(50% - 24px);
 }
 
 .review-icon {
@@ -932,14 +933,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
 .review {
-    width: 300px;
-}
-}
-
-@media (max-width: 340px) {
-.review {
-    width: 280px;
+    width: 100%;
 }
 }
